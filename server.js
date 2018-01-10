@@ -69,7 +69,7 @@ app.route('/')
   });
 
 
-app.listen(viewport,(err)=>{
+app.listen(port,(err)=>{
   if(err){
     console.log(err);
   }else{
