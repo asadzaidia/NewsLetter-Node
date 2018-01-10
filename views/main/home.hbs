@@ -1,0 +1,25 @@
+
+<div class="starter-template">
+  <h1 class="page-header">Enter Your Email to Subscribe!</h1>
+  
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    {{#if message}}
+    <div class="alert alert-success alert-dismissible">
+      <button type="submit" class="close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times</span></button>
+          {{message}}
+    </div>
+    {{/if}}
+  <form method="post">
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" name="email">
+
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+  </form>
+  </div>
+</div>
