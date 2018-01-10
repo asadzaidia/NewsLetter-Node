@@ -32,6 +32,7 @@ app.use(session({
   store:new MongoStore({url:'mongodb://asad:asad@ds151207.mlab.com:51207/newsletterprc'})
 }));
 app.use(flash());
+const port=process.env.PORT||3000;
 
 //Session=memory store,if you want to preserve the data for future user
 //Data Store=mongodb
@@ -68,10 +69,10 @@ app.route('/')
   });
 
 
-app.listen(3030,(err)=>{
+app.listen(viewport,(err)=>{
   if(err){
     console.log(err);
   }else{
-    console.log("Running on port 3030");
+    console.log(`Running on port ${port}`);
   }
 });
